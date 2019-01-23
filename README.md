@@ -7,7 +7,11 @@ in order to optimize the amount of present boilerplate code.
 
 ## How to compile
 It's a CMake based project using conan package manager. Please make sure to install [conan](https://conan.io/). 
+After installing conan you will have to change conan default(or custom) profile settings
+to use libstdc++11.
 
+To do this in file `~/.conan/profiles/default` change line `compiler.libcxx=libstdc++`
+to `compiler.libcxx=libstdc++11`
 ### If using CLion
 Generate `conanbuildinfo.txt` file with the following:
 ```bash
